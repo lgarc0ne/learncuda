@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="foo_cuda"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\usr\local\share\OpenCV\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/nvidia/code/test"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/nvidia/code/test/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nvidia/code/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nvidia/code/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nvidia/code/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/nvidia/code/test"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/nvidia/code/test/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nvidia/code/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nvidia/code/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nvidia/code/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/nvidia/code/test"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/nvidia/code/test/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nvidia/code/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nvidia/code/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nvidia/code/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="foo_cuda">
+				<Option output="/home/nvidia/code/test/foo_cuda" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nvidia/code/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENCV_TRAITS_ENABLE_DEPRECATED"/>
+					<Add directory="/usr/local/cuda-9.0/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/local/include/opencv/.."/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/nvidia/code/test/Makefile&quot;  VERBOSE=1 foo_cuda"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nvidia/code/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nvidia/code/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nvidia/code/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="foo_cuda/fast">
+				<Option output="/home/nvidia/code/test/foo_cuda" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nvidia/code/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENCV_TRAITS_ENABLE_DEPRECATED"/>
+					<Add directory="/usr/local/cuda-9.0/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/local/include/opencv/.."/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/nvidia/code/test/Makefile&quot;  VERBOSE=1 foo_cuda/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nvidia/code/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nvidia/code/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nvidia/code/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cuda_lib">
+				<Option output="/home/nvidia/code/test/libcuda_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nvidia/code/test"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/cuda-9.0/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv/.."/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/nvidia/code/test/Makefile&quot;  VERBOSE=1 cuda_lib"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nvidia/code/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nvidia/code/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nvidia/code/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cuda_lib/fast">
+				<Option output="/home/nvidia/code/test/libcuda_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nvidia/code/test"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/cuda-9.0/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv/.."/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/nvidia/code/test/Makefile&quot;  VERBOSE=1 cuda_lib/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nvidia/code/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nvidia/code/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nvidia/code/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/nvidia/code/test/GL/glext.h">
+			<Option target="foo_cuda"/>
+		</Unit>
+		<Unit filename="/home/nvidia/code/test/GL/glut.h">
+			<Option target="foo_cuda"/>
+		</Unit>
+		<Unit filename="/home/nvidia/code/test/book.h">
+			<Option target="foo_cuda"/>
+		</Unit>
+		<Unit filename="/home/nvidia/code/test/camera/camera.h">
+			<Option target="foo_cuda"/>
+		</Unit>
+		<Unit filename="/home/nvidia/code/test/cpu_anim.h">
+			<Option target="foo_cuda"/>
+		</Unit>
+		<Unit filename="/home/nvidia/code/test/cpu_bitmap.h">
+			<Option target="foo_cuda"/>
+		</Unit>
+		<Unit filename="/home/nvidia/code/test/cuda/basic.cu">
+			<Option target="cuda_lib"/>
+		</Unit>
+		<Unit filename="/home/nvidia/code/test/cuda/cuda_gl.cu">
+			<Option target="cuda_lib"/>
+		</Unit>
+		<Unit filename="/home/nvidia/code/test/cuda/dot_onbook.cu">
+			<Option target="cuda_lib"/>
+		</Unit>
+		<Unit filename="/home/nvidia/code/test/cuda/dot_product.cu">
+			<Option target="cuda_lib"/>
+		</Unit>
+		<Unit filename="/home/nvidia/code/test/cuda/heat_conduct.cu">
+			<Option target="cuda_lib"/>
+		</Unit>
+		<Unit filename="/home/nvidia/code/test/cuda/heat_conduct_texture1D.cu">
+			<Option target="cuda_lib"/>
+		</Unit>
+		<Unit filename="/home/nvidia/code/test/cuda/heat_conduct_texture2D.cu">
+			<Option target="cuda_lib"/>
+		</Unit>
+		<Unit filename="/home/nvidia/code/test/cuda/histogram.cu">
+			<Option target="cuda_lib"/>
+		</Unit>
+		<Unit filename="/home/nvidia/code/test/cuda/raytrace.cu">
+			<Option target="cuda_lib"/>
+		</Unit>
+		<Unit filename="/home/nvidia/code/test/cuda/stream.cu">
+			<Option target="cuda_lib"/>
+		</Unit>
+		<Unit filename="/home/nvidia/code/test/cuda/tools.hpp">
+			<Option target="cuda_lib"/>
+		</Unit>
+		<Unit filename="/home/nvidia/code/test/cuda/unsync.cu">
+			<Option target="cuda_lib"/>
+		</Unit>
+		<Unit filename="/home/nvidia/code/test/cuda/wave.cu">
+			<Option target="cuda_lib"/>
+		</Unit>
+		<Unit filename="/home/nvidia/code/test/cuda/zero_copy_mem.cu">
+			<Option target="cuda_lib"/>
+		</Unit>
+		<Unit filename="/home/nvidia/code/test/gl_helper.h">
+			<Option target="foo_cuda"/>
+		</Unit>
+		<Unit filename="/home/nvidia/code/test/gpu_anim.h">
+			<Option target="foo_cuda"/>
+		</Unit>
+		<Unit filename="/home/nvidia/code/test/main.cpp">
+			<Option target="foo_cuda"/>
+		</Unit>
+		<Unit filename="/home/nvidia/code/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/nvidia/code/test/../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/nvidia/code/test/../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/nvidia/code/test/../../../../usr/local/share/OpenCV/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/nvidia/code/test/../../../../usr/local/share/OpenCV/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

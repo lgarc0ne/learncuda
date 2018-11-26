@@ -1,0 +1,4 @@
+/home/nvidia/code/test/CMakeFiles/rebuild_cache.dir
+/home/nvidia/code/test/CMakeFiles/edit_cache.dir
+/home/nvidia/code/test/CMakeFiles/foo_cuda.dir
+/home/nvidia/code/test/CMakeFiles/cuda_lib.dir
